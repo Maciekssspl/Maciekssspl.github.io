@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+	<style>
+		body {
+		background-color: black;		
+		}
+		.blysk {
+			float: left;
+			background-image: url(blysk1.png);
+			margin-top: 100px;
+			height: 51px;
+			width: 99px;
+			visibility: hidden;
+			
+		}
+		.bron{
+			background-image: url(apex_ass.webp);
+			position: relative;
+  			left: 200px;
+  			top: 100px;
+			width: 1155px;
+			height: 416px;		
+		}
+		.bron:active .blysk{
+			transform: translateX(-100%);
+			visibility: visible;
+		}
+
+	
+	</style>
+
+
+</head>
+
+
+<body>
+
+<script>
+      function playAudio(url) {
+  new Audio(url).play();
+};
+    </script>
+<div class="bron" onclick="playAudio('gunshot.mp3')">
+<div class="blysk"></div>
+</div>
+
+
+</body>
+</html>
